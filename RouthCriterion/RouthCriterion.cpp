@@ -4,7 +4,6 @@
 using namespace std;
 
 void enterTable(int rowAmount, int columnAmount, vector <vector <double>>& indexArr);
-void printTable(int rowAmount, int columnAmount, vector <vector <double>>& indexArr);
 
 int main()
 {
@@ -20,16 +19,16 @@ int main()
 	columnAmount = aIndAmount / 2 + aIndAmount % 2;
 
 	vector <double> rCoefs(rowAmount - 2); // массив для r
-	vector <vector <double>> indexArr(rowAmount, vector <double> (columnAmount+1)); // двумерный массив для c[i][j]
+	vector <vector <double>> indexArr(rowAmount, vector <double>(columnAmount + 1)); // двумерный массив для c[i][j]
 
 	enterTable(rowAmount, columnAmount, indexArr); // ввести четные и нечетные элементы уравнения
-	
+
 	for (int i = 2; i < rowAmount; i++)
 	{
-		rCoefs[i-2] = indexArr[i - 2][0] / indexArr[i-1][0];
+		rCoefs[i - 2] = indexArr[i - 2][0] / indexArr[i - 1][0];
 		for (int j = 0; j < columnAmount; j++)
 		{
-			indexArr[i][j] = indexArr[i-2][j+1] - rCoefs[i-2] * indexArr[i - 1][j+1];
+			indexArr[i][j] = indexArr[i - 2][j + 1] - rCoefs[i - 2] * indexArr[i - 1][j + 1];
 		}
 	}
 
