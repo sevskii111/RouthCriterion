@@ -16,7 +16,7 @@ int main()
 	cin >> aIndAmount;
 
 	rowAmount = aIndAmount + 1;
-	columnAmount = aIndAmount / 2;
+	columnAmount = aIndAmount / 2 + aIndAmount % 2;
 
 	vector <double> rCoefs(rowAmount - 2); // массив для r
 	vector <vector <double>> indexArr(rowAmount, vector <double> (columnAmount)); // двумерный массив для c[i][j]
@@ -42,7 +42,7 @@ void enterTable(int rowAmount, int columnAmount, vector <vector <double>>& index
 void printTable(int rowAmount, int columnAmount, vector <vector <double>>& indexArr)
 {
 	cout << endl << "You entered: " << endl;
-	for (size_t i = 0; i < 2; i++)
+	for (size_t i = 0; i < rowAmount; i++)
 	{
 		for (size_t j = 0; j < columnAmount; j++)
 		{
