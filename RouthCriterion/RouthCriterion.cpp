@@ -32,18 +32,16 @@ int main()
 		}
 	}
 
-	system("cls");
-
 	firstC = indexArr[0][0];
 	for (int i = 1; i < rowAmount; i++)
 	{
 		if (!(firstC >= 0 && indexArr[i][0] >= 0) || (firstC < 0 && indexArr[i][0] < 0))
 		{
-			cout << "System is unstable!" << endl;
+			cout << ">> System is unstable!" << endl;
 			return 0;
 		}
 	}
-	cout << "System is stable!" << endl;
+	cout << ">> System is stable!" << endl;
 	return 0;
 }
 

@@ -1,0 +1,45 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+.gitattributes
+.vs/RouthCriterion/v16/.suo
+*.tlog
+*.pdb
+RouthCriterion/RouthCriterion.vcxproj.user
+RouthCriterion/RouthCriterion.vcxproj.filters
+RouthCriterion/Debug/vc142.idb
+RouthCriterion/Debug/routhcriterion.obj.enc
+RouthCriterion/Debug/RouthCriterion.log
+RouthCriterion.sln
+Debug/RouthCriterion.ilk
+.vs/RouthCriterion/v16/ipch/AutoPCH/524858cb1f72fff0/ROUTHCRITERION.ipch
+.vs/RouthCriterion/v16/Browse.VC.db
